@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            /*margin-top: 100px;
+            margin-bottom: 100px*/
+            margin: 100px 0 100px 0;
+        }
+        body div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+        }
+        body div:nth-child(5){
+            /*width: 100px;
+            height: 100px;  inline 때문에 안되니까 지움*/
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline; /*블럭태그를 인라인 태그로 만들기 위해, width height 안먹음, margin 위아래 안잡힘*/
+            margin: 10px 10px 10px 10px; /*위 오른 아래 왼 시계방향 2개만 있으면 양옆 위아래 다 적용*/
+        }
+        body div:nth-child(6){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline;
+        }
+        body div:nth-child(7){
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: none; /*사라짐*/
+        }
+        body div:nth-child(8){
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline;
+        }
+        body div:nth-child(9){
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        content1
+    </div>
+    <div>
+        content2
+    </div>
+    <div>
+        content3
+    </div>
+    <div>
+        content4
+    </div>
+    <div>
+        content5
+    </div>
+    <div>
+        content6
+    </div>
+    <div>
+        content7
+    </div>
+    <div>
+        content8
+    </div>
+    <div>
+        content9
+    </div>
+</body>
+</html>

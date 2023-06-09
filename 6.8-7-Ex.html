@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;     /* 패딩은 박스 안 마지는 박스 밖 여유 공간*/
+
+            }
+            #wrapper{
+                /* 표를 가운데로 옮겨 */
+                margin: 0 auto;
+                width :960px; 
+                /* 너비를 주지 않으면 안 옮겨짐 */
+            }
+            .header-text{
+                color: #ffffff;
+                width: 960px;  
+                height: 100px;
+                background-color: blue;
+                text-align: center;
+                line-height: 100px;
+                /* 폰트의 줄 간격  height 랑 맞추면 중앙정렬*/
+            }
+            .content{
+                width:600px;
+                height: 400px;
+                background-color: yellow;
+                float : left;
+                padding: 10px 10px; 
+                /* 패딩은 박스 안 마지는 박스 밖 여유 공간 */
+                box-sizing: border-box;
+                /* 패딩이 본래 박스 사이즈를 넘어갔을 때 본래 사이즈가 되도록 맞춰줌 */
+            }
+            .right-side{
+                width:360px;
+                height: 400px;
+                background-color: green;
+                float : left;
+                padding: 10px 10px;
+                box-sizing: border-box;
+            }
+            footer
+            {
+
+                clear:both;
+                width: 960px;
+                height: 100px;
+                background-color: red;
+                float : left;
+            }
+            footer>h4{
+                /* 푸터 안에 h4를 설정 */
+                display: inline;
+                /* h4는 블럭 태그 인데, 디스플레이로 인라인 요소로 바꿔줌 */
+                background-color: pink;
+            }
+            /* 
+            header{
+                width:900px;
+                height: 120px;
+                background-color: 블루;
+                border-bottom:1px solid 블랙;
+            }
+
+            .header-text{
+                foant-size:40px;
+                color: 화이트
+                text-align:center;
+                line-height:120px;
+            }
+
+            .content{
+                float: left
+                width:
+                height:
+                padding::
+                background-color:
+            }   
+
+            .right-side{
+                float: right
+                width
+                height
+                padding
+                background-color
+            }
+
+            footer{
+                clear : both
+                height
+                background-color
+            }
+             */
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- 표 자체를 중앙정렬하기 위해서 감싸다 -->
+            <header>
+               <h1 class="header-text">고정 그리드 레이아웃</h1>
+            </header>
+            <section class="content">
+               <h4>본문</h4>
+            </section>
+            <aside class="right-side">
+               <h4>사이드바</h4>
+            </aside>
+            <footer>
+               <h4>푸터</h4>
+            </footer>
+         </div>
+    </body>
+</html>
