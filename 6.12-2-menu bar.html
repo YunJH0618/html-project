@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #nav{
+            width: 800px;
+            margin: 0 auto; /*중앙정렬 auto 좌우 자동*/
+            border: 1px solid #cccccc;
+            overflow: hidden; /*html 요소 밖으로 삐져나오는 컨텐츠를 숨김*/
+            /*display: flex; 나란히 만들기*/
+        }
+
+        /*div#nav>div{ 밑에 모든 자식 다줌 div>div #nav div
+            margin: 10px 5px;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            flex: 1; flex 한것들 각각의 사이즈를 1로 만들어라
+        }*/
+        #nav div{
+            width: 150px;
+            height: 100px;
+            float: left; 
+            text-align: center;
+            font-size: 1.5em;
+            border-top: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+            margin: 5px;
+            line-height: 100px;
+        }
+
+        div#nav>div>a{ /*아래 div > 는 직계 div, a{}*/
+            color: #282828;
+            text-decoration: none; /*밑 줄 없애기*/
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div><a href="#">menu1</a></div>
+        <div><a href="#">menu2</a></div>
+        <div><a href="#">menu3</a></div>
+        <div><a href="#">menu4</a></div>
+        <div><a href="#">menu5</a></div>
+    </div>
+</body>
+</html>
